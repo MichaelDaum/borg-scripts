@@ -6,3 +6,6 @@ my scripts to handle borg backups
 - edit `etc/borg/config` 
 - `borg-init`
 - ln -s `/usr/bin/borg-backup` `/etc/cron.daily`
+
+more docu at https://borgbackup.readthedocs.io
+
