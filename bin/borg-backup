@@ -19,5 +19,3 @@ borg prune \
    --keep-weekly=$BORG_KEEP_WEEKLY \
    --keep-monthly=$BORG_KEEP_MONTHLY \
    --save-space
-
-/root/bin/synctonas
