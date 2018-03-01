@@ -1,0 +1,8 @@
+#!/bin/sh 
+
+CONFIGDIR=/etc/borg
+
+. $CONFIGDIR/config
+. $CONFIGDIR/passphrase
+
+borg init $BORG_REPO

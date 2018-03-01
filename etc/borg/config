@@ -1,0 +1,7 @@
+BORG_REPO=/opt/backup/borg-repository 
+BORG_KEEP_DAILY=7
+BORG_KEEP_WEEKLY=4
+BORG_KEEP_MONTHLY=6
+BORG_SOURCES="/etc /root /home"
+BORG_COMPRESS=zlib,5
+BORG_MOUNTPOINT=/media/borg

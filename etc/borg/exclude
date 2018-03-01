@@ -1,0 +1,24 @@
+*/backup
+*/build
+*/build-area
+*/.[cC]ache
+*/.config/google-chrome
+*/Downloads
+*/*.exe
+*/GeoIPCity.dat*
+*/git
+*/.local/share/akonadi
+*/*.lock
+*/*.msi
+*/.plenv
+*/RecentDocuments
+re:VirtualBox\ VMs
+*/*.rpm
+*/.svn
+*/*.tar.gz
+*/*.tgz
+*/.thumbnails
+*/tmp
+*/.[tT]rash
+*/working
+*/*.zip

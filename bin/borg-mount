@@ -1,0 +1,8 @@
+#!/bin/sh
+
+CONFIGDIR=/etc/borg
+
+. $CONFIGDIR/config
+. $CONFIGDIR/passphrase
+
+borg mount -o allow_other $BORG_REPO $BORG_MOUNTPOINT

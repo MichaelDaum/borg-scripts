@@ -1,0 +1,23 @@
+#!/bin/sh 
+
+CONFIGDIR=/etc/borg
+
+. $CONFIGDIR/config
+. $CONFIGDIR/passphrase
+ 
+borg create -v --stats \
+   --exclude-caches \
+   --exclude-from $CONFIGDIR/exclude \
+   --compression $BORG_COMPRESS \
+   $BORG_REPO::'{hostname}-{now:%Y-%m-%d}' \
+   $BORG_SOURCES
+ 
+borg prune \
+   -v $BORG_REPO \
+   --prefix '{hostname}-' \
+   --keep-daily=$BORG_KEEP_DAILY \
+   --keep-weekly=$BORG_KEEP_WEEKLY \
+   --keep-monthly=$BORG_KEEP_MONTHLY \
+   --save-space
+
+/root/bin/synctonas
