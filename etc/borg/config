@@ -1,3 +1,7 @@
+export BORG_CONFIG_DIR=/etc/borg
+export BORG_SECURITY_DIR=/etc/borg/security
+export BORG_KEYS_DIR=/etc/borg/keys
+export BORG_CACHE_DIR=/tmp
 export BORG_REPO=/opt/backup/borg-repository 
 export BORG_KEEP_DAILY=7
 export BORG_KEEP_WEEKLY=4
