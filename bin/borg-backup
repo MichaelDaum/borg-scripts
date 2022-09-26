@@ -14,8 +14,9 @@ borg create -v --stats \
  
 borg prune \
    -v $BORG_REPO \
-   --prefix '{hostname}-' \
+   --glob-archives='{hostname}-*' \
    --keep-daily=$BORG_KEEP_DAILY \
    --keep-weekly=$BORG_KEEP_WEEKLY \
    --keep-monthly=$BORG_KEEP_MONTHLY \
    --save-space
+
